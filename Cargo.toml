@@ -1,9 +1,12 @@
 [package]
-name = "date-my-dog"
-version = "0.1.0"
 authors = ["Karzan Botani <karzan@botani.nu>"]
 edition = "2018"
+name = "date-my-dog"
+version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# Request handlers use async functions that accept zero or more parameters. These parameters can be extracted from a request (see FromRequest trait) and returns a type that can be converted into an HttpResponse (see Responder trait):
 [dependencies]
+actix-rt = "2.2.0"
+actix-web = "3"
